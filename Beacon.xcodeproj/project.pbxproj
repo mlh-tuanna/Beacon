@@ -22,6 +22,8 @@
 		C7942D0B19A6DD34005E80B4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7942CEA19A6DD34005E80B4 /* UIKit.framework */; };
 		C7942D1319A6DD34005E80B4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C7942D1119A6DD34005E80B4 /* InfoPlist.strings */; };
 		C7942D1519A6DD34005E80B4 /* BeaconTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C7942D1419A6DD34005E80B4 /* BeaconTests.m */; };
+		C7942D1F19A6E342005E80B4 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7942D1E19A6E342005E80B4 /* CoreBluetooth.framework */; };
+		C7942D2119A6E34F005E80B4 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7942D2019A6E34F005E80B4 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,8 @@
 		C7942D1019A6DD34005E80B4 /* BeaconTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BeaconTests-Info.plist"; sourceTree = "<group>"; };
 		C7942D1219A6DD34005E80B4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C7942D1419A6DD34005E80B4 /* BeaconTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BeaconTests.m; sourceTree = "<group>"; };
+		C7942D1E19A6E342005E80B4 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		C7942D2019A6E34F005E80B4 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7942D2119A6E34F005E80B4 /* CoreLocation.framework in Frameworks */,
+				C7942D1F19A6E342005E80B4 /* CoreBluetooth.framework in Frameworks */,
 				C7942CE919A6DD34005E80B4 /* CoreGraphics.framework in Frameworks */,
 				C7942CEB19A6DD34005E80B4 /* UIKit.framework in Frameworks */,
 				C7942CE719A6DD34005E80B4 /* Foundation.framework in Frameworks */,
@@ -104,6 +110,8 @@
 		C7942CE519A6DD34005E80B4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C7942D2019A6E34F005E80B4 /* CoreLocation.framework */,
+				C7942D1E19A6E342005E80B4 /* CoreBluetooth.framework */,
 				C7942CE619A6DD34005E80B4 /* Foundation.framework */,
 				C7942CE819A6DD34005E80B4 /* CoreGraphics.framework */,
 				C7942CEA19A6DD34005E80B4 /* UIKit.framework */,

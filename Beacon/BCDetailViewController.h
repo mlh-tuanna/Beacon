@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+@import CoreLocation;
+@import CoreBluetooth;
+
 @interface BCDetailViewController : UIViewController
 
 @property (strong, nonatomic) id detailItem;
 
-@property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
 @end

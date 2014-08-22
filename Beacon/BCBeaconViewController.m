@@ -6,12 +6,12 @@
 //  Copyright (c) 2014 LTT. All rights reserved.
 //
 
-#import "BCDetailViewController.h"
+#import "BCBeaconViewController.h"
 
 static NSString * const kUUID = @"00000000-0000-0000-0000-000000000000";
 static NSString * const kIdentifier = @"SomeIdentifier";
 
-@interface BCDetailViewController () <CLLocationManagerDelegate, CBPeripheralManagerDelegate>
+@interface BCBeaconViewController () <CLLocationManagerDelegate, CBPeripheralManagerDelegate>
 
 @property (nonatomic, strong) CLLocationManager *locationManager;
 @property (nonatomic, strong) CLBeaconRegion *beaconRegion;
@@ -22,7 +22,7 @@ static NSString * const kIdentifier = @"SomeIdentifier";
 - (void)configureView;
 @end
 
-@implementation BCDetailViewController
+@implementation BCBeaconViewController
 
 #pragma mark - Managing the detail item
 
@@ -140,7 +140,7 @@ static NSString * const kIdentifier = @"SomeIdentifier";
     srand((unsigned) time(&t));
     CLBeaconRegion *region = [[CLBeaconRegion alloc] initWithProximityUUID:self.beaconRegion.proximityUUID
                                                                      major:rand()
-                                                                     minor:rand()
+                                                                     minor:self.minor
                                                                 identifier:self.beaconRegion.identifier];
     NSDictionary *beaconPeripheralData = [region peripheralDataWithMeasuredPower:nil];
     [self.peripheralManager startAdvertising:beaconPeripheralData];

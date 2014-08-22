@@ -15,7 +15,7 @@
 		C7942CF719A6DD34005E80B4 /* BCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C7942CF619A6DD34005E80B4 /* BCAppDelegate.m */; };
 		C7942CFA19A6DD34005E80B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7942CF819A6DD34005E80B4 /* Main.storyboard */; };
 		C7942CFD19A6DD34005E80B4 /* BCMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7942CFC19A6DD34005E80B4 /* BCMasterViewController.m */; };
-		C7942D0019A6DD34005E80B4 /* BCDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7942CFF19A6DD34005E80B4 /* BCDetailViewController.m */; };
+		C7942D0019A6DD34005E80B4 /* BCBeaconViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7942CFF19A6DD34005E80B4 /* BCBeaconViewController.m */; };
 		C7942D0219A6DD34005E80B4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7942D0119A6DD34005E80B4 /* Images.xcassets */; };
 		C7942D0919A6DD34005E80B4 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7942D0819A6DD34005E80B4 /* XCTest.framework */; };
 		C7942D0A19A6DD34005E80B4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7942CE619A6DD34005E80B4 /* Foundation.framework */; };
@@ -50,8 +50,8 @@
 		C7942CF919A6DD34005E80B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C7942CFB19A6DD34005E80B4 /* BCMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCMasterViewController.h; sourceTree = "<group>"; };
 		C7942CFC19A6DD34005E80B4 /* BCMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCMasterViewController.m; sourceTree = "<group>"; };
-		C7942CFE19A6DD34005E80B4 /* BCDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCDetailViewController.h; sourceTree = "<group>"; };
-		C7942CFF19A6DD34005E80B4 /* BCDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCDetailViewController.m; sourceTree = "<group>"; };
+		C7942CFE19A6DD34005E80B4 /* BCBeaconViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCBeaconViewController.h; sourceTree = "<group>"; };
+		C7942CFF19A6DD34005E80B4 /* BCBeaconViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCBeaconViewController.m; sourceTree = "<group>"; };
 		C7942D0119A6DD34005E80B4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C7942D0719A6DD34005E80B4 /* BeaconTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeaconTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7942D0819A6DD34005E80B4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -128,8 +128,8 @@
 				C7942CF819A6DD34005E80B4 /* Main.storyboard */,
 				C7942CFB19A6DD34005E80B4 /* BCMasterViewController.h */,
 				C7942CFC19A6DD34005E80B4 /* BCMasterViewController.m */,
-				C7942CFE19A6DD34005E80B4 /* BCDetailViewController.h */,
-				C7942CFF19A6DD34005E80B4 /* BCDetailViewController.m */,
+				C7942CFE19A6DD34005E80B4 /* BCBeaconViewController.h */,
+				C7942CFF19A6DD34005E80B4 /* BCBeaconViewController.m */,
 				C7942D0119A6DD34005E80B4 /* Images.xcassets */,
 				C7942CED19A6DD34005E80B4 /* Supporting Files */,
 			);
@@ -265,7 +265,7 @@
 			files = (
 				C7942CFD19A6DD34005E80B4 /* BCMasterViewController.m in Sources */,
 				C7942CF319A6DD34005E80B4 /* main.m in Sources */,
-				C7942D0019A6DD34005E80B4 /* BCDetailViewController.m in Sources */,
+				C7942D0019A6DD34005E80B4 /* BCBeaconViewController.m in Sources */,
 				C7942CF719A6DD34005E80B4 /* BCAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

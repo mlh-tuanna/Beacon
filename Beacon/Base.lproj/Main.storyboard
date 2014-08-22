@@ -128,9 +128,6 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <connections>
-                                            <segue destination="Ah7-4n-0Wa" kind="push" identifier="showDetail" id="ZTD-Dk-SGK"/>
-                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="I8E-0E-Ncu" style="IBUITableViewCellStyleDefault" id="O5o-Ar-miO">
                                         <rect key="frame" x="0.0" y="152" width="320" height="44"/>
@@ -149,9 +146,6 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <connections>
-                                            <segue destination="Ah7-4n-0Wa" kind="push" identifier="showDetail" id="V2l-hQ-hRo"/>
-                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="IId-Pw-LTa" style="IBUITableViewCellStyleDefault" id="LAB-9r-NIz">
                                         <rect key="frame" x="0.0" y="196" width="320" height="44"/>
@@ -170,9 +164,6 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <connections>
-                                            <segue destination="Ah7-4n-0Wa" kind="push" identifier="showDetail" id="JdL-xB-ZfE"/>
-                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="Foj-YU-fDK" style="IBUITableViewCellStyleDefault" id="Mq7-SI-xgQ">
                                         <rect key="frame" x="0.0" y="240" width="320" height="44"/>
@@ -191,9 +182,6 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <connections>
-                                            <segue destination="Ah7-4n-0Wa" kind="push" identifier="showDetail" id="1wp-O5-D08"/>
-                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="brd-9l-JLa" style="IBUITableViewCellStyleDefault" id="L00-pG-11x">
                                         <rect key="frame" x="0.0" y="284" width="320" height="44"/>
@@ -212,9 +200,6 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <connections>
-                                            <segue destination="Ah7-4n-0Wa" kind="push" identifier="showDetail" id="wMA-jP-gRl"/>
-                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="aM5-uP-ASs" style="IBUITableViewCellStyleDefault" id="6Pc-aY-BBu">
                                         <rect key="frame" x="0.0" y="328" width="320" height="44"/>
@@ -233,9 +218,6 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <connections>
-                                            <segue destination="Ah7-4n-0Wa" kind="push" identifier="showDetail" id="68n-7u-2kQ"/>
-                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="fZi-JK-Mld" style="IBUITableViewCellStyleDefault" id="bjB-Q6-aVg">
                                         <rect key="frame" x="0.0" y="372" width="320" height="44"/>
@@ -254,9 +236,6 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <connections>
-                                            <segue destination="Ah7-4n-0Wa" kind="push" identifier="showDetail" id="iR0-eD-HrB"/>
-                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -272,10 +251,10 @@
             </objects>
             <point key="canvasLocation" x="830" y="64"/>
         </scene>
-        <!--Detail View Controller - Detail-->
+        <!--Beacon View Controller - Detail-->
         <scene sceneID="Cn3-H9-jdl">
             <objects>
-                <viewController title="Detail" id="Ah7-4n-0Wa" customClass="BCDetailViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BCBeaconViewController" title="Detail" id="Ah7-4n-0Wa" customClass="BCBeaconViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cIm-e0-J51"/>
                         <viewControllerLayoutGuide type="bottom" id="a0L-h9-sNL"/>
@@ -324,7 +303,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lrm-kH-fPn" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1165" y="73"/>
+            <point key="canvasLocation" x="1232" y="64"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
@@ -332,7 +311,4 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
-    <inferredMetricsTieBreakers>
-        <segue reference="ZTD-Dk-SGK"/>
-    </inferredMetricsTieBreakers>
 </document>

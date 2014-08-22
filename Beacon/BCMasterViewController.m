@@ -8,7 +8,7 @@
 
 #import "BCMasterViewController.h"
 
-#import "BCDetailViewController.h"
+#import "BCBeaconViewController.h"
 
 @interface BCMasterViewController () {
     NSMutableArray *_objects;
@@ -19,30 +19,56 @@
 
 #pragma mark - Table View
 
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
+- (void)viewDidLoad
 {
+    [super viewDidLoad];
+    _objects = [[NSMutableArray alloc] initWithObjects:@"Cửa vào",
+                @"Quần áo",
+                @"Thực phẩm",
+                @"Điện gia dụng",
+                @"Mỹ phẩm",
+                @"Trang sức",
+                @"Điểm thanh toán",
+                @"Cửa ra",
+                nil];
 }
-*/
 
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
+    return 1;
 }
-*/
 
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    if ([[segue identifier] isEqualToString:@"showDetail"]) {
-        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
-        NSString *beacon = cell.textLabel.text;
-        [[segue destinationViewController] setDetailItem:beacon];
+    return [_objects count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *cellIdentifier = @"beaconPointCell";
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
+        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     }
+    
+    NSString *title = [_objects objectAtIndex:indexPath.row];
+    cell.textLabel.text = title;
+    
+    return cell;
 }
+
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSString *object = [_objects objectAtIndex:indexPath.row];
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    BCBeaconViewController *beaconViewController = [storyboard instantiateViewControllerWithIdentifier:@"BCBeaconViewController"];
+    [beaconViewController setDetailItem:object];
+    [beaconViewController setMinor:indexPath.row];
+    [self.navigationController pushViewController:beaconViewController animated:YES];
+}
+
 
 @end

@@ -11,8 +11,9 @@
 @import CoreLocation;
 @import CoreBluetooth;
 
-@interface BCDetailViewController : UIViewController
+@interface BCBeaconViewController : UIViewController
 
 @property (strong, nonatomic) id detailItem;
+@property (nonatomic) NSInteger minor;
 
 @end

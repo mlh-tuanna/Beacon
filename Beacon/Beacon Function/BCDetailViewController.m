@@ -8,7 +8,7 @@
 
 #import "BCDetailViewController.h"
 
-static NSString * const kUUID = @"00000000-0000-0000-0000-000000000000";
+static NSString * const kUUID = @"AD6D82ED-4D25-4933-AB3C-792763481E88";
 static NSString * const kIdentifier = @"SomeIdentifier";
 
 @interface BCDetailViewController () <CLLocationManagerDelegate, CBPeripheralManagerDelegate>

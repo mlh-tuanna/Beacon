@@ -11,5 +11,6 @@
 @interface BCProductTableViewCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UIImageView *imgProduct;
 @property (weak, nonatomic) IBOutlet UILabel *lblInfoProduct;
+@property (weak, nonatomic) IBOutlet UILabel *lblPriceProduct;
 
 @end

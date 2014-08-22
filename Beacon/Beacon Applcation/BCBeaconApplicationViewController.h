@@ -12,9 +12,22 @@
 #import "BCProductTableViewCell.h"
 
 @interface BCBeaconApplicationViewController : UIViewController
+{
+    NSMutableArray *electricProducts;
+    NSMutableArray *cosmeticsProducts;
+    NSMutableArray *clothesProducts;
+    NSMutableArray *foodProducts;
+    NSMutableArray *jewelryProducts;
+    NSString *titleProduct;
+}
 @property (weak, nonatomic) IBOutlet UISwitch *switchStatusBeacon;
 @property (weak, nonatomic) IBOutlet UILabel *lblDetailBeacon;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet UIImageView *imgStatus;
+
+
+
+@property (nonatomic, strong) NSMutableArray *items;
 
 //Beacon
 @property (nonatomic, strong) CLLocationManager *locationManager;

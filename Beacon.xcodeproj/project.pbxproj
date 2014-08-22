@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		79B1CF8A19A6F8930090E7DC /* BCDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79B1CF8719A6F8930090E7DC /* BCDetailViewController.m */; };
+		79B1CF8B19A6F8930090E7DC /* BCMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79B1CF8919A6F8930090E7DC /* BCMasterViewController.m */; };
+		79B1CF8E19A6F8B60090E7DC /* BCBeaconApplicationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79B1CF8D19A6F8B60090E7DC /* BCBeaconApplicationViewController.m */; };
+		79B1CF9119A6FAF60090E7DC /* BCProductTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 79B1CF9019A6FAF60090E7DC /* BCProductTableViewCell.m */; };
 		C7942CE719A6DD34005E80B4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7942CE619A6DD34005E80B4 /* Foundation.framework */; };
 		C7942CE919A6DD34005E80B4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7942CE819A6DD34005E80B4 /* CoreGraphics.framework */; };
 		C7942CEB19A6DD34005E80B4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7942CEA19A6DD34005E80B4 /* UIKit.framework */; };
@@ -14,8 +18,6 @@
 		C7942CF319A6DD34005E80B4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C7942CF219A6DD34005E80B4 /* main.m */; };
 		C7942CF719A6DD34005E80B4 /* BCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C7942CF619A6DD34005E80B4 /* BCAppDelegate.m */; };
 		C7942CFA19A6DD34005E80B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7942CF819A6DD34005E80B4 /* Main.storyboard */; };
-		C7942CFD19A6DD34005E80B4 /* BCMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7942CFC19A6DD34005E80B4 /* BCMasterViewController.m */; };
-		C7942D0019A6DD34005E80B4 /* BCDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7942CFF19A6DD34005E80B4 /* BCDetailViewController.m */; };
 		C7942D0219A6DD34005E80B4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7942D0119A6DD34005E80B4 /* Images.xcassets */; };
 		C7942D0919A6DD34005E80B4 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7942D0819A6DD34005E80B4 /* XCTest.framework */; };
 		C7942D0A19A6DD34005E80B4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7942CE619A6DD34005E80B4 /* Foundation.framework */; };
@@ -37,6 +39,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		79B1CF8619A6F8930090E7DC /* BCDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCDetailViewController.h; sourceTree = "<group>"; };
+		79B1CF8719A6F8930090E7DC /* BCDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCDetailViewController.m; sourceTree = "<group>"; };
+		79B1CF8819A6F8930090E7DC /* BCMasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCMasterViewController.h; sourceTree = "<group>"; };
+		79B1CF8919A6F8930090E7DC /* BCMasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCMasterViewController.m; sourceTree = "<group>"; };
+		79B1CF8C19A6F8B60090E7DC /* BCBeaconApplicationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCBeaconApplicationViewController.h; sourceTree = "<group>"; };
+		79B1CF8D19A6F8B60090E7DC /* BCBeaconApplicationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCBeaconApplicationViewController.m; sourceTree = "<group>"; };
+		79B1CF8F19A6FAF60090E7DC /* BCProductTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCProductTableViewCell.h; sourceTree = "<group>"; };
+		79B1CF9019A6FAF60090E7DC /* BCProductTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCProductTableViewCell.m; sourceTree = "<group>"; };
 		C7942CE319A6DD34005E80B4 /* Beacon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Beacon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7942CE619A6DD34005E80B4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C7942CE819A6DD34005E80B4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -48,10 +58,6 @@
 		C7942CF519A6DD34005E80B4 /* BCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCAppDelegate.h; sourceTree = "<group>"; };
 		C7942CF619A6DD34005E80B4 /* BCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCAppDelegate.m; sourceTree = "<group>"; };
 		C7942CF919A6DD34005E80B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C7942CFB19A6DD34005E80B4 /* BCMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCMasterViewController.h; sourceTree = "<group>"; };
-		C7942CFC19A6DD34005E80B4 /* BCMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCMasterViewController.m; sourceTree = "<group>"; };
-		C7942CFE19A6DD34005E80B4 /* BCDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCDetailViewController.h; sourceTree = "<group>"; };
-		C7942CFF19A6DD34005E80B4 /* BCDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCDetailViewController.m; sourceTree = "<group>"; };
 		C7942D0119A6DD34005E80B4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C7942D0719A6DD34005E80B4 /* BeaconTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeaconTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7942D0819A6DD34005E80B4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -88,6 +94,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		79B1CF8419A6F8930090E7DC /* Beacon Applcation */ = {
+			isa = PBXGroup;
+			children = (
+				79B1CF8C19A6F8B60090E7DC /* BCBeaconApplicationViewController.h */,
+				79B1CF8D19A6F8B60090E7DC /* BCBeaconApplicationViewController.m */,
+				79B1CF8F19A6FAF60090E7DC /* BCProductTableViewCell.h */,
+				79B1CF9019A6FAF60090E7DC /* BCProductTableViewCell.m */,
+			);
+			path = "Beacon Applcation";
+			sourceTree = "<group>";
+		};
+		79B1CF8519A6F8930090E7DC /* Beacon Function */ = {
+			isa = PBXGroup;
+			children = (
+				79B1CF8619A6F8930090E7DC /* BCDetailViewController.h */,
+				79B1CF8719A6F8930090E7DC /* BCDetailViewController.m */,
+				79B1CF8819A6F8930090E7DC /* BCMasterViewController.h */,
+				79B1CF8919A6F8930090E7DC /* BCMasterViewController.m */,
+			);
+			path = "Beacon Function";
+			sourceTree = "<group>";
+		};
 		C7942CDA19A6DD34005E80B4 = {
 			isa = PBXGroup;
 			children = (
@@ -123,13 +151,11 @@
 		C7942CEC19A6DD34005E80B4 /* Beacon */ = {
 			isa = PBXGroup;
 			children = (
+				79B1CF8419A6F8930090E7DC /* Beacon Applcation */,
+				79B1CF8519A6F8930090E7DC /* Beacon Function */,
 				C7942CF519A6DD34005E80B4 /* BCAppDelegate.h */,
 				C7942CF619A6DD34005E80B4 /* BCAppDelegate.m */,
 				C7942CF819A6DD34005E80B4 /* Main.storyboard */,
-				C7942CFB19A6DD34005E80B4 /* BCMasterViewController.h */,
-				C7942CFC19A6DD34005E80B4 /* BCMasterViewController.m */,
-				C7942CFE19A6DD34005E80B4 /* BCDetailViewController.h */,
-				C7942CFF19A6DD34005E80B4 /* BCDetailViewController.m */,
 				C7942D0119A6DD34005E80B4 /* Images.xcassets */,
 				C7942CED19A6DD34005E80B4 /* Supporting Files */,
 			);
@@ -263,10 +289,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7942CFD19A6DD34005E80B4 /* BCMasterViewController.m in Sources */,
 				C7942CF319A6DD34005E80B4 /* main.m in Sources */,
-				C7942D0019A6DD34005E80B4 /* BCDetailViewController.m in Sources */,
+				79B1CF8A19A6F8930090E7DC /* BCDetailViewController.m in Sources */,
 				C7942CF719A6DD34005E80B4 /* BCAppDelegate.m in Sources */,
+				79B1CF8E19A6F8B60090E7DC /* BCBeaconApplicationViewController.m in Sources */,
+				79B1CF9119A6FAF60090E7DC /* BCProductTableViewCell.m in Sources */,
+				79B1CF8B19A6F8930090E7DC /* BCMasterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,6 +499,7 @@
 				C7942D1A19A6DD34005E80B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C7942D1B19A6DD34005E80B4 /* Build configuration list for PBXNativeTarget "BeaconTests" */ = {
 			isa = XCConfigurationList;
@@ -479,6 +508,7 @@
 				C7942D1D19A6DD34005E80B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

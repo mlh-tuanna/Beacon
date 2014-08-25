@@ -160,49 +160,60 @@
 - (void)locationManager:(CLLocationManager *)manager didRangeBeacons:(NSArray *)beacons inRegion:(CLBeaconRegion *)region{
     if ([beacons count] > 0) {
         CLBeacon *beacon = [beacons objectAtIndex:0];
-        self.lblDetailBeacon.text = [NSString stringWithFormat:@"You are located in areas Beacon %d", [beacon.minor intValue]];
         switch ([beacon.minor intValue]) {
-            case 1:
+            case 0:
                 self.imgStatus.image = [UIImage imageNamed:@"welcom.png"];
                 self.imgStatus.hidden = NO;
                 self.tableView.hidden = YES;
+                self.lblDetailBeacon.text = @"Welcome to LifeTime Technology";
+                break;
+            case 1:
+                self.imgStatus.hidden = YES;
+                self.tableView.hidden = NO;
+                self.items = clothesProducts;
+                self.lblDetailBeacon.text = @"You are in store Clothes";
+                titleProduct = @"Clothes";
+                [self.tableView reloadData];
                 break;
             case 2:
                 self.imgStatus.hidden = YES;
                 self.tableView.hidden = NO;
-                self.items = electricProducts;
-                titleProduct = @"Electric";
+                self.items = foodProducts;
+                self.lblDetailBeacon.text = @"You are in store Food";
+                titleProduct = @"Food";
                 [self.tableView reloadData];
                 break;
             case 3:
                 self.imgStatus.hidden = YES;
                 self.tableView.hidden = NO;
-                self.items = cosmeticsProducts;
-                titleProduct = @"Cosmetics";
+                self.items = electricProducts;
+                self.lblDetailBeacon.text = @"You are in store Electric";
+                titleProduct = @"Electric";
                 [self.tableView reloadData];
                 break;
             case 4:
                 self.imgStatus.hidden = YES;
                 self.tableView.hidden = NO;
-                self.items = clothesProducts;
-                titleProduct = @"Clothes";
+                self.items = cosmeticsProducts;
+                self.lblDetailBeacon.text = @"You are in store Cosmetics";
+                titleProduct = @"Cosmetics";
                 [self.tableView reloadData];
                 break;
             case 5:
                 self.imgStatus.hidden = YES;
                 self.tableView.hidden = NO;
-                self.items = foodProducts;
-                titleProduct = @"Food";
-                [self.tableView reloadData];
-                break;
-            case 6:
-                self.imgStatus.hidden = YES;
-                self.tableView.hidden = NO;
                 self.items = jewelryProducts;
+                self.lblDetailBeacon.text = @"You are in store Jewelry";
                 titleProduct = @"Jewelry";
                 [self.tableView reloadData];
                 break;
+            case 6:
+                self.lblDetailBeacon.text = @"You are in point of payment";
+                self.imgStatus.hidden = YES;
+                self.tableView.hidden = YES;
+                break;
             case 7:
+                self.lblDetailBeacon.text = @"Goodluck! See you again";
                 self.imgStatus.image = [UIImage imageNamed:@"thankyou.jpg"];
                 self.imgStatus.hidden = NO;
                 self.tableView.hidden = YES;

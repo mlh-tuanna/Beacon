@@ -1,0 +1,2 @@
+jewelry1.png;Italian gold necklaces, luxury, noble;10000 USD
+jewelry2.png;Diamond bracelet, noble, express class;50000 USD

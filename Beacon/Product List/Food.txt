@@ -1,0 +1,3 @@
+food1.png;Fragrant rice, originating in Vietnam, delicious, nutritious;1 USD/Kg
+food2.png;Basa, Made in Vietnam, aromatic, delicious, easy to prepare;5 USD/Kg
+food3.png;Kobe beef, delicious, good for health;200 USD/Kg

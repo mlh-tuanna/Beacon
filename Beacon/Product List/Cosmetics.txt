@@ -1,0 +1,2 @@
+cosmetics1.png;French perfume, pleasant aroma, the product 100% natural;100 USD
+cosmetics2.png;British perfume, scent, the product 100% natural;500 USD

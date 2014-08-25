@@ -1,0 +1,2 @@
+clothes1.png;Women's skirts, 100% Vietnam, reasonable price;10 USD
+clothes2.png;Men's shirts, youthful, elegant;8 USD

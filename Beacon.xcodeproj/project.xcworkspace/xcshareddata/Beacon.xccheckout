@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>0BA5C154-F8BD-44B4-9D6D-DFB836534672</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Beacon</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>7F5ABB38-55D7-43BD-9176-D6237992F90A</key>
+		<string>https://github.com/natvnn/Beacon</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Beacon.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>7F5ABB38-55D7-43BD-9176-D6237992F90A</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/natvnn/Beacon</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>7F5ABB38-55D7-43BD-9176-D6237992F90A</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>7F5ABB38-55D7-43BD-9176-D6237992F90A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Beacon</string>
+		</dict>
+	</array>
+</dict>
+</plist>

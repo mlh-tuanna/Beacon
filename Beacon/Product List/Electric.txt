@@ -1,0 +1,3 @@
+electric1.png;Sony TV, high-tech products, to bring you a new experience;900 USD
+electric2.png;Korean refrigerator, new technology, save energy;300 USD
+electric3.png;Funiki conditioned, two-way conditioned, environmentally friendly;700 USD
